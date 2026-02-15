@@ -40,9 +40,7 @@ body {
 
 /* ================= HEADER + NAV ================= */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  
   background-color: var(--surface);
   border-bottom: 1px solid var(--border);
 }
@@ -52,6 +50,7 @@ body {
   display: none;
   justify-content: center;
   padding: 1rem;
+  height: 200px;
 }
 
 .logo-desktop {
@@ -236,4 +235,32 @@ footer {
     grid-template-columns: repeat(2, minmax(260px, 1fr));
     gap: 0.4rem 2rem;
   }
+}
+
+/* botão */
+.link {
+  margin: 0; /* mantém no canto esquerdo */
+}
+
+.link a {
+  display: inline-block;
+  padding: 3px 10px;
+  background-color: #d5edff; /* azul bem claro */
+  color: #10315c; /* azul mais fechado */
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Animação suave */
+.link a:hover {
+  background-color: #2e4e69;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Leve efeito ao clicar */
+.link a:active {
+  transform: translateY(0);
 }

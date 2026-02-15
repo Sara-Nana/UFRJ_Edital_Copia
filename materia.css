@@ -1,0 +1,193 @@
+/* =========================
+   VARIÁVEIS DE COR
+========================= */
+:root {
+    --cor-fundo: #e6eaf5;
+    --cor-container: #ffffff;
+    --cor-texto: #333;
+    --cor-titulo-principal: #0a3d62;
+    --cor-titulo-secao: #1e3799;
+    --cor-subtitulo: #2c3e50;
+    --cor-borda: #e0e0e0;
+    --cor-destaque-fundo: #f0f8ff;
+    --cor-destaque-borda: #1e3799;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--cor-container);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cor-titulo-principal);
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h2 {
+    color: var(--cor-titulo-secao);
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--cor-subtitulo);
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: var(--cor-subtitulo);
+}
+
+/* =========================
+   TEXTO
+========================= */
+p {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   LISTAS
+========================= */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* =========================
+   DICAS
+========================= */
+.dicas {
+    background-color: var(--cor-destaque-fundo);
+    padding: 20px;
+    border-left: 5px solid var(--cor-destaque-borda);
+    border-radius: 5px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+.container-voltar {
+  text-align: center; /* centraliza o botão */
+  margin-top: 30px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+/* Hover suave */
+.btn-voltar:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+/* Clique */
+.btn-voltar:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   BOTÃO VOLTAR (SVG)
+========================= */
+
+.voltar {
+    margin-bottom: 20px;
+}
+
+.voltar a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--cor-titulo-secao);
+    background-color: var(--cor-destaque-fundo);
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover */
+.voltar a:hover {
+    background-color: var(--cor-titulo-secao);
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Suaviza o SVG */
+.voltar svg {
+    width: 25px;
+    height: 25px;
+}
+
